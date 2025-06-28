@@ -1,13 +1,10 @@
 
 # WordPress Security Goodies
 
-* Tags: voting, votation
+* Tags: security 
 * Requires at least: 6.8.1
 * Tested up to: 6.8.1
-* Requires PHP: 8.3.0
-* Stable tag: 0.1.0
-* License: GPLv2 or later
-* License URI: https://www.gnu.org/licenses/gpl-2.0.html
+* Requires PHP: 7.4
 * Text Domain: wsg 
 
 Some security fixes for WordPress.
@@ -19,8 +16,27 @@ In some cases it may break things, so please test it before deploying to product
 
 ## Installation
 
+### Without Composer
+
 1. Upload the directory `wp-security-goodies` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
+
+### With Composer
+
+Add the repository to `repositories` in your `composer.json`.
+
+```
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/xolof/wp-security-goodies"
+    }
+],
+```
+
+Install the plugin.
+
+`composer require xolof/wp-security-goodies`
 
 ## Changelog
 
