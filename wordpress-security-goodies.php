@@ -23,7 +23,9 @@ if ( ! defined( 'ABSPATH' ) ) {
  * It is a common security measure to prevent brute force attacks
  * and other vulnerabilities associated with XML-RPC.
  */
-add_filter('xmlrpc_enabled', '__return_false');
+add_filter( 'xmlrpc_methods', function ( $methods ) {
+  return [];
+});
 
 /**
  * Disable REST API for non-logged-in users
