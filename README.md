@@ -13,7 +13,9 @@
 Some security fixes for WordPress.
 
 ## Description
+This plugin includes some security fixes which are useful for many WordPress projects.
 
+In some cases it may break things, so please test it before deploying to production.
 
 ## Installation
 
@@ -23,5 +25,6 @@ Some security fixes for WordPress.
 ## Changelog
 
 ### 0.1.0
-* First version.
+* Disable xmlrpc.php
+* Disable the REST API for unauthenticated users
 
