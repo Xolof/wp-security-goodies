@@ -16,8 +16,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+/**
+ * Disable XML-RPC
+ *
+ * This filter disables the XML-RPC functionality in WordPress.
+ * It is a common security measure to prevent brute force attacks
+ * and other vulnerabilities associated with XML-RPC.
+ */
 add_filter('xmlrpc_enabled', '__return_false');
 
+/**
+ * Disable REST API for non-logged-in users
+ */
 add_filter( 'rest_authentication_errors', function( $result ) {
     // If a previous authentication check was applied,
     // pass that result along without modification.
@@ -39,5 +49,4 @@ add_filter( 'rest_authentication_errors', function( $result ) {
     // on logged-in requests
     return $result;
 });
-
 
