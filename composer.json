@@ -1,0 +1,20 @@
+{
+    "name": "xolof/wp-security-goodies",
+    "description": "Security fixes for WordPress.",
+    "keywords": ["wordpress", "plugin", "security"],
+    "homepage": "https://github.com/Xolof/wp-security-goodies",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Olof Johansson",
+            "email": "olof@liberdev.se",
+	    "homepage": "https://oljo.online"
+        }
+    ],
+    "type": "wordpress-plugin",
+    "require": {
+        "composer/installers": "v2.3.0",
+        "php": ">=7.4"
+    }
+}
+
