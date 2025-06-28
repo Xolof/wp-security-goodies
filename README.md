@@ -19,12 +19,12 @@ In some cases it may break things, so please test it before deploying to product
 
 ## Installation
 
-1. Upload the directory `wp_security_goodies` to the `/wp-content/plugins/` directory
+1. Upload the directory `wp-security-goodies` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 ## Changelog
 
-### 0.1.0
+### 0.0.1
 * Disable xmlrpc.php
 * Disable the REST API for unauthenticated users
 
