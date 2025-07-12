@@ -38,8 +38,9 @@ add_filter( 'rest_authentication_errors', function( $result ) {
     }
 
     // No authentication has been performed yet.
-    // Return an error if user is not logged in.
-    if ( ! is_user_logged_in() ) {
+    // Return an error if user is not logged in,
+    // and if the route is not the route used by the plugin Independent Analytics.
+    if ( ! is_user_logged_in() && $_SERVER['REQUEST_URI'] != '/wp-json/iawp/search' ) {
         return new WP_Error(
             'rest_not_logged_in',
             __( 'You are not currently logged in.' ),
